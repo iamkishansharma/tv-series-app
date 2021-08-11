@@ -12,12 +12,10 @@ class Movies extends Component {
       `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&query=John`
     )
       .then((response) => response.json())
-      .then((json) =>
-        setTimeout(() => {
-          this.setState({ movies: json.results });
-          console.log(json.results);
-        }, 2000)
-      );
+      .then((json) => {
+        this.setState({ movies: json.results });
+        console.log(json.results);
+      });
   }
 
   render() {
