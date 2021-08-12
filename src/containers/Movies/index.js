@@ -33,9 +33,8 @@ class Movies extends Component {
           this.setState({ movies: json.results, isFetching: false });
           console.log(json.results);
         });
-    }else{
-    this.setState({ movieName: e.target.value, isFetching: false });
-
+    } else {
+      this.setState({ movieName: e.target.value, isFetching: false });
     }
   };
 
