@@ -1,8 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import Movies from "../../containers/Movies/index.js";
 import SingleMovie from "../../containers/SingleMovie";
-
+import Movies from "../../containers/Movies";
 const Main = (props) => (
   <Switch>
     <Route exact path="/" component={Movies} />
