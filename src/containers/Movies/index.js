@@ -43,7 +43,7 @@ class Movies extends Component {
 
     return (
       <div>
-        <Intro message="Here you can search popular movies." />
+        <Intro message="Enter a movie name to see details." />
         <div>
           <input
             value={movieName}

@@ -1,7 +1,7 @@
 img {
   margin-top: 20px;
-  border: 2px solid rgb(30, 255, 49);
-  border-radius: 10px;
+  border: 2px solid rgb(45, 30, 255);
+  border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 img:hover {
@@ -26,10 +26,10 @@ img:hover {
 }
 input {
   height: 40px;
-  width: 500px;
+  min-width: 40%;
   padding-left: 10px;
   padding-right: 10px;
   font-size: medium;
-  border-radius: 16px;
-  box-shadow: rgba(107, 103, 103, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }

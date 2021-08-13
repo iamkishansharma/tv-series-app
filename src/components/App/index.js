@@ -1,5 +1,5 @@
 import "./App.css";
-import { Component } from "react";
+import { Component, React } from "react";
 import "whatwg-fetch";
 import Main from "../Main";
 class App extends Component {
@@ -7,7 +7,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h2 className="App-title">Movie App</h2>
+          <h2
+            onClick={document.getElementsByTagName("div")}
+            className="App-title"
+          >
+            Movie App
+          </h2>
         </header>
         <Main />
       </div>

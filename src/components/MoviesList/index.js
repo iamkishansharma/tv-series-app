@@ -3,18 +3,16 @@ import "../../components/MoviesList/index.css";
 import { Link } from "react-router-dom";
 // import Movies from "../../containers/Movies";
 
-const MovieListItem = ({ movie }) => (
-  <li>
-    <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
-  </li>
-);
+const MovieListItem = ({ movie }) => <li>{movie.title}</li>;
 
 const MoviesList = (props) => {
   return (
     <div>
       <ul className="movies-list">
         {props.list.map((movie) => (
-          <MovieListItem movie={movie} key={movie.id} />
+          <Link to={`/movie/${movie.id}`}>
+            <MovieListItem movie={movie} key={movie.id} />
+          </Link>
         ))}
       </ul>
     </div>

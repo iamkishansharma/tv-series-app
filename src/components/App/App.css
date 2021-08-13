@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #b321fc;
+  background-color: #bf2ce4;
   height: 40px;
   margin-top: -40px;
   padding: 30px;
@@ -48,4 +48,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
 }
