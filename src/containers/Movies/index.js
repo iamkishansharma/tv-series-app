@@ -11,16 +11,6 @@ class Movies extends Component {
     isFetching: false,
   };
 
-  // componentDidMount() {
-  //   fetch(
-  //     `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&query=John`
-  //   )
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       this.setState({ movies: json.results });
-  //       console.log(json.results);
-  //     });
-  // }
   onMoviesInputChanged = (e) => {
     this.setState({ movieName: e.target.value, isFetching: true });
 
